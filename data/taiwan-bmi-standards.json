@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "source": "衛生福利部國民健康署 (Taiwan Ministry of Health and Welfare — Health Promotion Administration)",
+    "source_url": "https://www.hpa.gov.tw/",
+    "last_updated": "2024",
+    "note": "Taiwan BMI standards differ from WHO global standards due to Asian body composition research showing higher cardiometabolic risk at lower BMI values."
+  },
+  "adult_standard": {
+    "description": "Standard BMI classification for Taiwanese adults (18–64 years)",
+    "categories": [
+      { "label": "過輕 (Underweight)", "label_en": "Underweight", "range": "< 18.5", "min": null, "max": 18.49 },
+      { "label": "正常 (Normal)", "label_en": "Normal", "range": "18.5 – 23.9", "min": 18.5, "max": 23.9 },
+      { "label": "過重 (Overweight)", "label_en": "Overweight", "range": "24.0 – 26.9", "min": 24.0, "max": 26.9 },
+      { "label": "輕度肥胖 (Obese Class I)", "label_en": "Obese Class I", "range": "27.0 – 29.9", "min": 27.0, "max": 29.9 },
+      { "label": "中度肥胖 (Obese Class II)", "label_en": "Obese Class II", "range": "30.0 – 34.9", "min": 30.0, "max": 34.9 },
+      { "label": "重度肥胖 (Obese Class III)", "label_en": "Obese Class III", "range": "≥ 35.0", "min": 35.0, "max": null }
+    ]
+  },
+  "elderly_standard": {
+    "description": "Modified BMI standard for adults aged 65 and above. Higher range recommended due to increased sarcopenia risk at lower weights.",
+    "note": "台灣老人健康促進計畫建議 65 歲以上成人 BMI 目標為 22–26.9",
+    "recommended_range": { "min": 22.0, "max": 26.9 },
+    "source": "台灣老人健康促進計畫 — 衛生福利部"
+  },
+  "children_standard": {
+    "description": "BMI for children and adolescents uses age- and sex-specific percentile charts, not fixed cutoffs.",
+    "note": "See 台灣兒童及青少年 BMI 百分位圖 (HPA, 2013)",
+    "overweight_threshold_percentile": 85,
+    "obese_threshold_percentile": 95,
+    "source_url": "https://www.hpa.gov.tw/"
+  },
+  "comparison_who_global": {
+    "note": "WHO global adult cutoffs for comparison",
+    "categories": [
+      { "label": "Underweight", "range": "< 18.5" },
+      { "label": "Normal", "range": "18.5 – 24.9" },
+      { "label": "Overweight", "range": "25.0 – 29.9" },
+      { "label": "Obese Class I", "range": "30.0 – 34.9" },
+      { "label": "Obese Class II", "range": "35.0 – 39.9" },
+      { "label": "Obese Class III", "range": "≥ 40.0" }
+    ]
+  },
+  "waist_circumference_thresholds": {
+    "description": "腰圍風險切點 — Taiwan HPA abdominal obesity thresholds",
+    "male": { "risk_threshold_cm": 90, "note": "男性腰圍 ≥90cm 為腹部肥胖" },
+    "female": { "risk_threshold_cm": 80, "note": "女性腰圍 ≥80cm 為腹部肥胖" },
+    "source": "WHO WPR / Taiwan HPA harmonized standard"
+  }
+}

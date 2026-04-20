@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "description": "TDEE (Total Daily Energy Expenditure) calculation formulas and activity multipliers",
+    "note": "All weights in kg, heights in cm unless otherwise noted"
+  },
+  "bmr_formulas": {
+    "mifflin_st_jeor": {
+      "name": "Mifflin-St Jeor (1990)",
+      "recommended": true,
+      "citation": "Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr. 1990;51(2):241-7.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+      "accuracy_note": "Most validated for general population; ±10% accuracy",
+      "formulas": {
+        "male": "BMR = (10 × weight_kg) + (6.25 × height_cm) - (5 × age) + 5",
+        "female": "BMR = (10 × weight_kg) + (6.25 × height_cm) - (5 × age) - 161"
+      }
+    },
+    "harris_benedict_revised": {
+      "name": "Harris-Benedict Revised — Roza & Shizgal (1984)",
+      "recommended": false,
+      "citation": "Roza AM, Shizgal HM. The Harris Benedict equation reevaluated: resting energy requirements and the body cell mass. Am J Clin Nutr. 1984;40(1):168-82.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/6741850/",
+      "accuracy_note": "Tends to overestimate by ~5% in sedentary adults",
+      "formulas": {
+        "male": "BMR = 88.362 + (13.397 × weight_kg) + (4.799 × height_cm) - (5.677 × age)",
+        "female": "BMR = 447.593 + (9.247 × weight_kg) + (3.098 × height_cm) - (4.330 × age)"
+      }
+    },
+    "katch_mcardle": {
+      "name": "Katch-McArdle (Lean Mass Based)",
+      "recommended": "for athletes or individuals with known body fat %",
+      "citation": "McArdle WD, Katch FI, Katch VL. Exercise Physiology: Energy, Nutrition, and Human Performance.",
+      "accuracy_note": "Most accurate when lean body mass is known via DEXA or skinfold measurement",
+      "formula": "BMR = 370 + (21.6 × lean_mass_kg)",
+      "lean_mass_note": "lean_mass_kg = weight_kg × (1 - body_fat_decimal)"
+    }
+  },
+  "activity_multipliers": {
+    "source": "Standard values derived from Ainsworth et al. Compendium of Physical Activities",
+    "levels": [
+      {
+        "key": "sedentary",
+        "label": "Sedentary",
+        "label_zh": "久坐 (辦公室工作，幾乎不運動)",
+        "multiplier": 1.2,
+        "description": "Desk job, no structured exercise"
+      },
+      {
+        "key": "lightly_active",
+        "label": "Lightly Active",
+        "label_zh": "輕度活動 (每週運動 1–3 天)",
+        "multiplier": 1.375,
+        "description": "Light exercise 1–3 days per week"
+      },
+      {
+        "key": "moderately_active",
+        "label": "Moderately Active",
+        "label_zh": "中度活動 (每週運動 3–5 天)",
+        "multiplier": 1.55,
+        "description": "Moderate exercise 3–5 days per week"
+      },
+      {
+        "key": "very_active",
+        "label": "Very Active",
+        "label_zh": "高度活動 (每週重度訓練 6–7 天)",
+        "multiplier": 1.725,
+        "description": "Hard exercise 6–7 days per week"
+      },
+      {
+        "key": "extremely_active",
+        "label": "Extremely Active",
+        "label_zh": "超高度活動 (運動員或勞力工作者)",
+        "multiplier": 1.9,
+        "description": "Very hard exercise, physical job, or twice-daily training"
+      }
+    ]
+  },
+  "caloric_deficit_guidelines": {
+    "source": "Evidence-based weight loss recommendations",
+    "safe_weekly_loss_kg": 0.5,
+    "max_weekly_loss_kg": 1.0,
+    "deficit_for_0_5kg_loss_kcal": 500,
+    "deficit_for_1kg_loss_kcal": 1000,
+    "minimum_calorie_floor": {
+      "male_kcal": 1500,
+      "female_kcal": 1200,
+      "note": "Do not go below these values without medical supervision. Values below 1200 kcal (F) / 1500 kcal (M) significantly increase risk of nutrient deficiency and metabolic adaptation."
+    }
+  }
+}

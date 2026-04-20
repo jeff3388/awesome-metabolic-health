@@ -1,0 +1,138 @@
+{
+  "_meta": {
+    "description": "Evidence-graded summary of common nutritional supplements for metabolic health and weight management",
+    "grades": {
+      "A": "Multiple independent high-quality RCTs with consistent findings OR established systematic review/meta-analysis",
+      "B": "Single well-designed RCT OR consistent prospective observational data",
+      "C": "Mechanistic evidence, animal studies only, or conflicting human data",
+      "D": "No credible human evidence, or contradicted by higher-quality studies"
+    },
+    "last_reviewed": "2026-04"
+  },
+  "supplements": [
+    {
+      "name": "Creatine Monohydrate",
+      "name_zh": "肌酸",
+      "primary_claim": "Increased strength output, lean muscle mass support",
+      "evidence_grade": "A",
+      "effective_dose": "3–5g/day (maintenance); 20g/day × 5 days loading phase optional",
+      "timing": "Timing not critical; post-workout has marginal benefit",
+      "key_citation": "Lanhers C et al. Creatine supplementation and upper limb strength performance. Sports Med. 2017.",
+      "issn_position_stand": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z",
+      "safety": "Well-established safety profile; adequate hydration important",
+      "taiwan_note": "Available at most 藥局 and health food stores; look for GMP-certified products"
+    },
+    {
+      "name": "Caffeine",
+      "name_zh": "咖啡因",
+      "primary_claim": "Endurance performance, fat oxidation, alertness",
+      "evidence_grade": "A",
+      "effective_dose": "3–6 mg/kg body weight, 60 min pre-exercise",
+      "timing": "60 minutes before exercise or cognitive task",
+      "key_citation": "Guest NS et al. International society of sports nutrition position stand: caffeine and exercise performance. JISSN. 2021.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33388079/",
+      "safety": "Tolerance develops; cycling recommended (2 weeks on, 1 week off). Avoid >400mg/day.",
+      "taiwan_note": "Average cup of 台灣咖啡 (hand-drip) contains 80–120mg caffeine"
+    },
+    {
+      "name": "Omega-3 Fatty Acids (EPA/DHA)",
+      "name_zh": "魚油 (EPA/DHA)",
+      "primary_claim": "Triglyceride reduction, anti-inflammatory, cardiovascular support",
+      "evidence_grade": "A",
+      "effective_dose": "1–2g EPA+DHA/day for general health; 4g/day for hypertriglyceridemia (prescription level)",
+      "timing": "With meals to reduce GI discomfort and improve absorption",
+      "key_citation": "AHA Scientific Advisory on Omega-3 Fatty Acids and Cardiovascular Disease. Circulation. 2018.",
+      "pubmed": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000574",
+      "safety": "High doses (>3g/day) may increase bleeding time; consult physician if on anticoagulants",
+      "selection_note": "Look for products with combined EPA+DHA ≥500mg per capsule; IFOS or similar third-party certification preferred"
+    },
+    {
+      "name": "Probiotics",
+      "name_zh": "益生菌",
+      "primary_claim": "Gut microbiome support, digestive health, immune function",
+      "evidence_grade": "B",
+      "notes": "Effects are strain-specific. Lactobacillus and Bifidobacterium species are most studied. Evidence for weight loss is weak (C); digestive benefits are stronger (B).",
+      "effective_dose": "1–10 billion CFU/day; specific to strain and indication",
+      "timing": "Best taken before meals or as directed on product",
+      "key_citation": "Hill C et al. Expert consensus document. The International Scientific Association for Probiotics and Prebiotics consensus statement. Nat Rev Gastroenterol Hepatol. 2014.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24912386/",
+      "safety": "Generally safe; immunocompromised individuals should consult physician",
+      "taiwan_note": "Taiwan probiotics market is heavily regulated under 健康食品認證; look for 衛福部 health food certification"
+    },
+    {
+      "name": "Vitamin C (Ascorbic Acid)",
+      "name_zh": "維他命 C",
+      "primary_claim": "Antioxidant, immune support, collagen synthesis",
+      "evidence_grade": "A",
+      "effective_dose": "Taiwan DRI: 100mg/day (adults); tolerable upper limit 2000mg/day",
+      "timing": "Can be taken any time; split doses improve absorption above 200mg",
+      "key_citation": "Carr AC, Maggini S. Vitamin C and Immune Function. Nutrients. 2017.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29099763/",
+      "food_sources": ["guava 番石榴 (228mg/100g)", "kiwi 奇異果 (93mg/100g)", "bell pepper 彩椒 (183mg/100g)", "broccoli 花椰菜 (89mg/100g)"],
+      "safety": "High doses (>1g/day) may cause GI discomfort; kidney stone risk in susceptible individuals"
+    },
+    {
+      "name": "Lutein + Zeaxanthin",
+      "name_zh": "葉黃素",
+      "primary_claim": "Macular degeneration prevention, eye health",
+      "evidence_grade": "A",
+      "effective_dose": "10mg lutein + 2mg zeaxanthin per day (AREDS2 formulation)",
+      "key_citation": "AREDS2 Research Group. Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration. JAMA. 2013.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23645227/",
+      "notes": "Evidence is specifically for slowing AMD progression in those already diagnosed; prevention benefit in healthy eyes is B-grade",
+      "food_sources": ["spinach 菠菜", "kale 羽衣甘藍", "egg yolk 蛋黃 (most bioavailable form)"],
+      "taiwan_note": "Very popular supplement in Taiwan; most products use FloraGLO or Kemin-sourced lutein — these brands have the most clinical data"
+    },
+    {
+      "name": "Vitamin D",
+      "name_zh": "維他命 D",
+      "primary_claim": "Bone health, immune function, calcium absorption",
+      "evidence_grade": "A",
+      "effective_dose": "Taiwan DRI: 400–600 IU/day (adults); deficiency treatment: 1500–2000 IU/day",
+      "testing_note": "Serum 25(OH)D target: 30–50 ng/mL. Supplement if <20 ng/mL.",
+      "key_citation": "Holick MF. Vitamin D deficiency. NEJM. 2007.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17634462/",
+      "taiwan_note": "Despite abundant sunlight, indoor lifestyles mean vitamin D deficiency is common in Taiwan urban populations"
+    },
+    {
+      "name": "B-Complex Vitamins",
+      "name_zh": "維他命 B 群",
+      "primary_claim": "Energy metabolism cofactors, neurological function",
+      "evidence_grade_deficiency": "A",
+      "evidence_grade_supplementation_in_adequate": "C",
+      "notes": "B vitamins are essential cofactors in metabolic pathways. Supplementation benefits are clear in deficiency states but limited in well-nourished individuals. B12 deficiency is common in vegans/vegetarians.",
+      "effective_dose": "Per Taiwan DRIs; most supplements provide far above DRI — bioavailability limits toxicity risk",
+      "timing": "Morning preferred (B vitamins may cause alertness/vivid dreams if taken at night)",
+      "key_citation": "Kennedy DO. B Vitamins and the Brain: Mechanisms, Dose and Efficacy. Nutrients. 2016.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26862001/"
+    },
+    {
+      "name": "Green Tea Extract (EGCG)",
+      "name_zh": "綠茶萃取物 (EGCG)",
+      "primary_claim": "Mild fat oxidation enhancement, antioxidant",
+      "evidence_grade": "C",
+      "notes": "Meta-analyses show small but statistically significant effects on fat oxidation (-0.2 to -0.5 kg over 12 weeks). Not clinically meaningful for most individuals. Beneficial as a food (green tea) rather than supplement.",
+      "key_citation": "Hursel R et al. The effects of green tea on weight loss and weight maintenance. Obes Rev. 2009.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19614721/",
+      "safety": "High-dose EGCG supplements (>800mg/day) associated with hepatotoxicity risk; stick to beverage form"
+    },
+    {
+      "name": "CLA (Conjugated Linoleic Acid)",
+      "name_zh": "共軛亞麻油酸 (CLA)",
+      "primary_claim": "Fat loss, muscle preservation",
+      "evidence_grade": "C",
+      "notes": "Modest effect in meta-analyses (~0.1 kg/week reduction vs placebo); effect size not clinically meaningful for most. May negatively affect lipid profiles with long-term use.",
+      "key_citation": "Whigham LD et al. Efficacy of conjugated linoleic acid for reducing fat mass. Am J Clin Nutr. 2007.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17490954/"
+    },
+    {
+      "name": "Garcinia Cambogia (HCA)",
+      "name_zh": "藤黃果",
+      "primary_claim": "Appetite suppression, fat blocking",
+      "evidence_grade": "D",
+      "notes": "A 1998 JAMA double-blind RCT showed no significant weight loss vs placebo. Subsequent meta-analyses confirm small effects indistinguishable from statistical noise. Not recommended.",
+      "key_citation": "Heymsfield SB et al. Garcinia cambogia (Hydroxycitric Acid) as a Potential Antiobesity Agent. JAMA. 1998.",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9820257/"
+    }
+  ]
+}
